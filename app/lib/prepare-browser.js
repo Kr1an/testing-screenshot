@@ -5,6 +5,7 @@ module.exports = async () => {
     const browser = await puppeteer.launch({
         headless: false,
         args: [
+            '--no-sandbox',
             '--headless',
             '--enable-webgl',
             '--disable-dev-shm-usage'

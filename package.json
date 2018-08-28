@@ -4,6 +4,9 @@
   "main": "app/index.js",
   "author": "Anton Krinitsyn",
   "license": "MIT",
+  "scripts": {
+      "start": "node ."
+  },
   "dependencies": {
     "aws-sdk": "^2.303.0",
     "body-parser": "^1.18.3",
