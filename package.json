@@ -1,0 +1,16 @@
+{
+  "name": "screenshots-taker",
+  "version": "1.0.0",
+  "main": "app/index.js",
+  "author": "Anton Krinitsyn",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.303.0",
+    "body-parser": "^1.18.3",
+    "delay": "^3.1.0",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "gm": "^1.23.1",
+    "puppeteer": "^1.7.0"
+  }
+}
