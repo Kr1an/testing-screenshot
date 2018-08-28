@@ -5,6 +5,7 @@ const delay = require('delay')
 module.exports = async (browser, model) => {
     console.log('preparing page')
     const page = await browser.newPage()
+    await page.setViewport({ width: 1900, height: 1000 })
     await page.evaluate(fs.readFileSync(path.join(__dirname, 'engine.js'), 'utf8'))
     await page.evaluate(() => {
         const body = document.body
