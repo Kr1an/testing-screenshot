@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser')
 const requestHandler = require('./request-handler');
 
-module.exports = (port=4000, hostname='0.0.0.0') => {
+module.exports = (port=4000) => {
     console.log('creating http server')
 
     const app = express()
@@ -11,9 +11,9 @@ module.exports = (port=4000, hostname='0.0.0.0') => {
 
     app.post('/', requestHandler);
 
-    const server = app.listen(port, hostname)
+    const server = app.listen(port)
 
-    console.log(`http server was created at address ${hostname}:${port}`)
+    console.log(`http server was created at port ${port}`)
 
     return server;
 }

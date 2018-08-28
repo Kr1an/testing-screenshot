@@ -11,6 +11,7 @@ describe("createHttpServer", () => {
         const freePort = await getFreePort();
         const app = createHttpServer(freePort);
         expect(app).toBeTruthy();
+        app.close()
     })
     it("should be callable with POST and id", async () => {
         const freePort = await getFreePort();
@@ -18,6 +19,7 @@ describe("createHttpServer", () => {
         const result = await request(app).post("/").send({ id: '123' })
         expect(result.statusCode).toBe(200);
         expect(processProject).toHaveBeenCalledTimes(1);
+        app.close()
     })
     it("should return 400 if id is not supplied", async () => {
         const freePort = await getFreePort();
@@ -25,6 +27,7 @@ describe("createHttpServer", () => {
         const result = await request(app).post("/").send()
         expect(result.statusCode).toBe(400);
         expect(processProject).not.toHaveBeenCalled();
+        app.close()
     })
 })
 

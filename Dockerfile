@@ -15,7 +15,7 @@ RUN rpm -ivh --nodeps http://dl.fedoraproject.org/pub/archive/fedora/linux/relea
     && rpm -ivh --nodeps http://dl.fedoraproject.org/pub/archive/fedora/linux/releases/20/Fedora/x86_64/os/Packages/l/libwayland-cursor-1.2.0-3.fc20.x86_64.rpm \
     && rpm -ivh --nodeps http://dl.fedoraproject.org/pub/archive/fedora/linux/releases/20/Fedora/x86_64/os/Packages/g/gtk3-3.10.4-1.fc20.x86_64.rpm
 
-RUN yum install -y libX11-devel libXtst alsa-lib
+RUN yum install -y libX11-devel libXtst alsa-lib findutils
 
 WORKDIR /app
 
