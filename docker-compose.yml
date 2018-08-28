@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  screenshots-taker:
+    build: .
+    command: yarn dev
+    volumes:
+        - .:/app/
+    ports:
+        - "4000:4000"
+    environment:
+        - AWS_ACCESS_KEY_ID
+        - AWS_SECRET_ACCESS_KEY

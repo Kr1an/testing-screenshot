@@ -5,7 +5,8 @@
   "author": "Anton Krinitsyn",
   "license": "MIT",
   "scripts": {
-      "start": "node ."
+    "start": "node .",
+    "dev": "nodemon ."
   },
   "dependencies": {
     "aws-sdk": "^2.303.0",
@@ -15,5 +16,8 @@
     "express": "^4.16.3",
     "gm": "^1.23.1",
     "puppeteer": "^1.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
   }
 }
