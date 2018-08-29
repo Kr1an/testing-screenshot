@@ -50480,4 +50480,4 @@ KreoEngine.prototype["resetShortcutHanlder"] = KreoEngine.prototype.resetShortcu
 KreoEngine.prototype["setClicksHandler"] = KreoEngine.prototype.setClicksHandler;
 KreoEngine.prototype["resetClicksHanlder"] = KreoEngine.prototype.resetClicksHanlder;
 KreoEngine.prototype["toggleParallelProjection"] = KreoEngine.prototype.toggleParallelProjection;
-window.engine = KreoEngine
+window.KreoEngine = KreoEngine
